@@ -12,7 +12,7 @@ set -e -v
 cd $(dirname $0) || exit
 
 python3 ../../../data_preprocess.py \
-  --src_dir /open_explorer/model_convert/crop_image_resize224x224 \
+  --src_dir /open_explorer/ddk/samples/ai_toolchain/horizon_model_convert_sample/03_classification/10_model_convert/mapper/image_dataset \
   --dst_dir ./calibration_data_bgr_f32 \
   --pic_ext .rgb \
   --read_mode opencv
