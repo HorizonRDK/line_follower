@@ -45,7 +45,7 @@ sudo apt install -y tros-line-follower-model
 
 ```shell
 source /opt/tros/local_setup.bash
-ros2 run line_follower_perception line_follower_perception --ros-args -p model_path:=/opt/hobot/model/x3/basic/resnet18_224x224_nv12.bin -p model_name:=resnet18_224x224_nv12 &
+ros2 run line_follower_perception line_follower_perception --ros-args -p model_path:=/opt/tros/share/line_follower_perception/resnet18_224x224_nv12.bin -p model_name:=resnet18_224x224_nv12 &
 ```
 
 运行mipi_cam
