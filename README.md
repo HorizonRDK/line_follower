@@ -59,7 +59,7 @@ ros2 launch mipi_cam mipi_cam.launch.py &
 
 ```powershell
 source /opt/tros/local_setup.bash
-ros2 run originbot_base originbot_base
+ros2 launch originbot_base robot.launch.py 
 ```
 用PVC胶带搭建巡线场景，巡线效果图如下图：
 ![](./imgs/demo.png)
