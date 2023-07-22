@@ -45,14 +45,14 @@ sudo apt install -y tros-line-follower-model
 
 ```shell
 source /opt/tros/local_setup.bash
-ros2 run line_follower_perception line_follower_perception --ros-args -p model_path:=/opt/tros/share/line_follower_perception/resnet18_224x224_nv12.bin -p model_name:=resnet18_224x224_nv12 &
+ros2 run line_follower_perception line_follower_perception --ros-args -p model_path:=/opt/tros/share/line_follower_perception/resnet18_224x224_nv12.bin -p model_name:=resnet18_224x224_nv12
 ```
 
 运行mipi_cam
 
 ```powershell
 source /opt/tros/local_setup.bash
-ros2 launch mipi_cam mipi_cam.launch.py &
+ros2 launch mipi_cam mipi_cam.launch.py
 ```
 
 最后进入小车的运动控制package，originbot_base运行
@@ -61,7 +61,7 @@ ros2 launch mipi_cam mipi_cam.launch.py &
 source /opt/tros/local_setup.bash
 ros2 launch originbot_base robot.launch.py 
 ```
-用PVC胶带搭建巡线场景，巡线效果图如下图：
+用PVC胶带搭建场景，巡线效果图如下图：
 ![](./imgs/demo.png)
 
 # 原理简介
