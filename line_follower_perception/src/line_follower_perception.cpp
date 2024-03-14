@@ -88,7 +88,7 @@ LineFollowerPerceptionNode::LineFollowerPerceptionNode(const std::string& node_n
   publisher_ =
     this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 5);
   subscriber_ =
-    this->create_subscription_hbmem<hbm_img_msgs::msg::HbmMsg1080P>(
+    this->create_subscription<hbm_img_msgs::msg::HbmMsg1080P>(
       "hbmem_img",
       10,
       std::bind(&LineFollowerPerceptionNode::subscription_callback,

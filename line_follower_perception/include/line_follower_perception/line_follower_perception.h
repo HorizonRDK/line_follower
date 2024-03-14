@@ -78,7 +78,7 @@ class LineFollowerPerceptionNode : public DnnNode {
   bool GetParams();
   bool AssignParams(const std::vector<rclcpp::Parameter> & parameters);
   ModelTaskType model_task_type_ = ModelTaskType::ModelInferType;
-  rclcpp::SubscriptionHbmem<hbm_img_msgs::msg::HbmMsg1080P>::SharedPtr
+  rclcpp::Subscription<hbm_img_msgs::msg::HbmMsg1080P>::SharedPtr
     subscriber_;
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
   cv::Mat image_bgr_;
