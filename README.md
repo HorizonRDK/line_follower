@@ -15,7 +15,7 @@ The following robots are all compatible with RDK X3
 
 | Robot Name           | Manufacturer | Reference Link                                               |
 | :------------------- | ----------- | ------------------------------------------------------------ |
-| OriginBot Smart Robot | Goyue       | [Click here](https://www.originbot.org/)                     |
+| OriginBot Smart Robot | Guyuehome       | [Click here](https://www.originbot.org/)                     |
 | X3 Robo              | Lunqu       | [Click here](https://item.taobao.com/item.htm?spm=a230r.1.14.17.55e556912LPGGx&id=676436236906&ns=1&abbucket=12#detail) |
 | Tracked Smart Car     | Waveshare   | [Click here](https://detail.tmall.com/item.htm?abbucket=9&id=696078152772&rn=4d81bea40d392509d4a5153fb2c65a35&spm=a1z10.5-b-s.w4011-22714387486.159.12d33742lJtqRk) |
 | RDK X3 Robot         | Yabo Intelligent | [Click here](https://detail.tmall.com/item.htm?id=726857243156&scene=taobao_shop&spm=a1z10.1-b-s.w5003-22651379998.21.421044e12Yqrjm) |
@@ -48,7 +48,8 @@ sudo apt install -y tros-line-follower-model
 ```shell
 source /opt/tros/local_setup.bash
 ros2 run line_follower_perception line_follower_perception --ros-args -p model_path:=/opt/tros/share/line_follower_perception/resnet18_224x224_nv12.bin -p model_name:=resnet18_224x224_nv12
-```Run mipi_cam
+```
+Run mipi_cam
 
 ```powershell
 source /opt/tros/local_setup.bash
